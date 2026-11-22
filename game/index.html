@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SHADOW PROTOCOL — Top-Down Stealth</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b0f14'/%3E%3Ccircle cx='16' cy='16' r='8' fill='%2337e0a0'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrap">
+  <div id="topbar">
+    <div id="game-title">SHADOW PROTOCOL</div>
+    <div id="level-name">—</div>
+    <div id="hud">
+      <span class="hud-item">HP <b id="hud-hp">100</b></span>
+      <span class="hud-item">STAMINA <b id="hud-stam">100</b></span>
+      <span class="hud-item">NOISE <b id="hud-noise">—</b></span>
+      <span class="hud-item">SUSPICION <b id="hud-susp">0</b></span>
+      <span class="hud-item">ALARM <b id="hud-alarm">CLEAR</b></span>
+      <span class="hud-item">TIME <b id="hud-time">0:00</b></span>
+      <span class="hud-item">SCORE <b id="hud-score">0</b></span>
+    </div>
+  </div>
+  <div id="stage">
+    <canvas id="game" width="960" height="640"></canvas>
+    <canvas id="minimap" width="180" height="128"></canvas>
+    <div id="objectives"><h3>OBJECTIVES</h3><ul id="obj-list"></ul></div>
+    <div id="toast"></div>
+    <div id="hint">WASD move · SHIFT sprint · C crouch · E interact · Q throw rock · P pause</div>
+    <div id="menu" class="overlay">
+      <div class="panel">
+        <h1>SHADOW PROTOCOL</h1>
+        <p class="sub">Elite infiltrator. Steal the data. Rescue the informant.<br>Leave no trace.</p>
+        <div id="menu-levels"></div>
+        <button id="btn-start">▶ START MISSION</button>
+        <button id="btn-how">HOW TO PLAY</button>
+        <div id="howto" class="hidden">
+          <p><b>WASD / Arrows</b> — move &nbsp; <b>Shift</b> — sprint (loud, drains stamina)<br>
+          <b>C</b> — crouch (slow, quiet, harder to see) &nbsp; <b>E</b> — interact / pick up / hack / hide<br>
+          <b>Q</b> — throw a rock to distract guards &nbsp; <b>P / Esc</b> — pause</p>
+          <p>Stay out of vision cones. Walls block sight. Shadows and crouching make you harder to spot.
+          Lockers hide you completely. Hack terminals to kill cameras and lasers. A raised alarm brings every guard to you.</p>
+        </div>
+        <p class="foot">Original game · offline · no tracking</p>
+      </div>
+    </div>
+    <div id="pause" class="overlay hidden">
+      <div class="panel">
+        <h1>PAUSED</h1>
+        <p class="sub" id="pause-sub"></p>
+        <button id="btn-resume">RESUME</button>
+        <button id="btn-restart">RESTART LEVEL</button>
+        <button id="btn-quit">QUIT TO MENU</button>
+      </div>
+    </div>
+    <div id="end" class="overlay hidden">
+      <div class="panel">
+        <h1 id="end-title">MISSION COMPLETE</h1>
+        <p class="sub" id="end-sub"></p>
+        <div id="end-stats"></div>
+        <button id="btn-next">NEXT LEVEL</button>
+        <button id="btn-retry">RETRY LEVEL</button>
+        <button id="btn-menu2">MAIN MENU</button>
+      </div>
+    </div>
+  </div>
+  <div id="bottombar">SHADOW PROTOCOL · an original stealth game for make.fun · WASD move · SHIFT sprint · C crouch · E interact · Q throw · P pause</div>
+</div>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
