@@ -1,8 +1,8 @@
 # SHADOW PROTOCOL
 
-[![make.fun](https://img.shields.io/badge/make.fun-bounty-blue)](https://make.fun/bounty/best-stealth-game-20261121-1759)
-[![rank](https://img.shields.io/badge/make.fun-rank%20pending-lightgrey)](https://github.com/kryptonzxq/shadow-protocol-01)
-[![reward](https://img.shields.io/badge/make.fun-reward%20pending-lightgrey)](https://github.com/kryptonzxq/shadow-protocol-01)
+[![make.fun · best-stealth-game-20261121-1759](https://make.fun/badge/best-stealth-game-20261121-1759.svg)](https://make.fun/bounty/best-stealth-game-20261121-1759?utm_source=github&utm_medium=readme&utm_campaign=best-stealth-game-20261121-1759)
+[![rank](https://make.fun/badge/best-stealth-game-20261121-1759/kryptonzxq/shadow-protocol-01/rank.svg)](https://make.fun/bounty/best-stealth-game-20261121-1759/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=best-stealth-game-20261121-1759)
+[![reward](https://make.fun/badge/best-stealth-game-20261121-1759/kryptonzxq/shadow-protocol-01/reward.svg)](https://make.fun/bounty/best-stealth-game-20261121-1759?utm_source=github&utm_medium=readme&utm_campaign=best-stealth-game-20261121-1759)
 
 An original top-down 2D stealth action game for the [make.fun Best Stealth Game bounty](https://make.fun/bounty/best-stealth-game-20261121-1759).
 
